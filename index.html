@@ -3,13 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font loading  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet" />
+
+    <!-- reset css -->
     <link
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
       rel="stylesheet" />
+
     <title>moijesuisjo</title>
   </head>
   <body>
     <div id="app">
+      <div>{{message}}</div>
       <canvas id="3dscene"></canvas>
     </div>
     <script type="module" src="/src/js/main.js"></script>
