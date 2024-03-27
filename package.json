@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "canvas-sketch-util": "^1.10.0",
+    "dat.gui": "^0.7.9",
     "gsap": "^3.12.5",
     "sass": "^1.72.0",
     "stats.js": "^0.17.0",
