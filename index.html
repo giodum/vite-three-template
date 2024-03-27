@@ -41,11 +41,43 @@
     <meta name="theme-color" content="#1e1e1e" />
 
     <title>- moijesuisjo</title>
+    <meta
+      name="description"
+      content="moijesuisjo - creative front-end developer" />
+    <meta name="author" content="Giorgio Maria Duminuco" />
   </head>
   <body>
     <div id="app">
-      <div>{{message}}</div>
       <canvas id="3dscene"></canvas>
+      <div class="info">
+        <div class="info-button">
+          <img
+            src="/logo.svg"
+            alt="moijesuisjo - creative front-end developer" />
+        </div>
+        <div class="info-modal">
+          <div class="info-section">
+            <div class="info-title">Project Name ✨</div>
+            <div class="info-description">Lorem ipsum dolor sit amet.</div>
+          </div>
+
+          <div class="info-section">
+            <div class="info-title">Instructions</div>
+            <div class="info-description">
+              Lorem ipsum dolor sit amet.<br />
+              Have fun!
+            </div>
+          </div>
+
+          <div class="info-section">
+            <div class="info-title">References</div>
+            <div class="info-description">
+              Code inspired by
+              <a href="/" target="_blank">Name</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script type="module" src="/src/js/main.js"></script>
   </body>
