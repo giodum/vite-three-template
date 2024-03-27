@@ -1,6 +1,8 @@
 import * as THREE from 'three'
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js'
 
+import Stats from 'stats.js'
+
 import gsap from 'gsap'
 
 import math from 'canvas-sketch-util/math'
@@ -26,6 +28,15 @@ export default class Scene3D {
     if (Scene3D.item) {
       throw new Error('Scene3D has already been initialized')
     }
+
+    // init stats
+    this.stats = new Stats()
+    this.stats.showPanel(0)
+    document.body.appendChild(this.stats.dom)
+    this.stats.dom.classList.add('stats')
+
+    // get reference to parameters
+    this.parameters = Parameters.getInstance()
 
     // init renderer and scene
     this.#initRendererAndScene()
